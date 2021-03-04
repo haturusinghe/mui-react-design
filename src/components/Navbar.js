@@ -10,6 +10,7 @@ import {
   InputBase,
   IconButton,
   Badge,
+  Typography,
 } from "@material-ui/core";
 import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
 import NotificationsOutlinedIcon from "@material-ui/icons/NotificationsOutlined";
@@ -29,7 +30,7 @@ const useStyles = makeStyles({
     fontSize: "0.8rem",
     color: "#fff",
     borderRadius: "10px",
-    "&:hover": { backgroundColor: "#fff" },
+    "&:hover": { border: "1px solid white" },
     "& .MuiSvgIcon-root": { marginRight: "5px" },
   },
 });
@@ -58,6 +59,9 @@ export default function Navbar(props) {
       <AppBar position="static" className={classes.rooty}>
         <Toolbar>
           <Grid container alignItems="center">
+            <Grid item>
+              <Typography variant="h6">THE BORING COMPANY</Typography>
+            </Grid>
             <Grid xs item></Grid>
             <Grid item>
               <HMenu />
